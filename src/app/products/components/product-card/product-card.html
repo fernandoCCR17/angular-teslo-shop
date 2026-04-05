@@ -1,0 +1,12 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <!-- Product Image -->
+    <product-carousel [images]="product().images" />
+
+    <div class="">
+        <h1 class="text-3xl font-bold font-montserrat text-accent">{{product().title}}</h1>
+
+        <div class="divider"></div>
+
+        <p>{{ product().description }}...</p>
+    </div>
+</div>
