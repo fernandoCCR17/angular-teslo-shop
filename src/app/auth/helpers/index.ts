@@ -1,0 +1,1 @@
+export const patternPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
