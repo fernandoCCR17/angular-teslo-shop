@@ -10,6 +10,10 @@ export const routes: Routes = [
         ]
     },
     {
+        path: "admin",
+        loadChildren: () => import("./admin-dashboard/admin-dashboard.routes").then(m => m.default),
+    },
+    {
         path: "",
         loadChildren: () => import("./store-front/store-front.routes").then(m => m.default)
     }
